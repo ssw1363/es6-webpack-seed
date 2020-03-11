@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Webpack 4</title>
+    </head>
+    <body>
+        <div >
+           <table >
+               <tr><td colspan="4" >계산 : <input type="text" id="func" readonly>
+                <input type="text" id="func_storage"></td></tr>
+               <tr>
+                   <td>
+                       <button id="ac">AC</button>
+                   </td>
+                   <td>
+                        <input type="button" id="pn" value="+">
+                </td>
+                    <td>
+                        <button id="back">back</button>
+                    </td>
+                    <td>
+                        <button class="operator" value="/">÷</button>
+                    </td>
+               </tr>
+
+               <tr>
+                <td>
+                    <button class="select_Num" value="9">9</button>
+                </td>
+                <td>
+                     <button class="select_Num" value="8">8</button>
+             </td>
+                 <td>
+                     <button class="select_Num" value="7">7</button>
+                 </td>
+                 <td>
+                     <button class="operator" value="*">×</button>
+                 </td>
+            </tr>
+                <td>
+                    <button class="select_Num" value="6">6</button>
+                </td>
+                <td>
+                     <button class="select_Num" value="5">5</button>
+             </td>
+                 <td>
+                     <button class="select_Num" value="4">4</button>
+                 </td>
+                 <td>
+                     <button class="operator" value="-">－</button>
+                 </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="select_Num" value="3">3</button>
+                </td>
+                <td>
+                     <button class="select_Num" value="2">2</button>
+             </td>
+                 <td>
+                     <button class="select_Num" value="1">1</button>
+                 </td>
+                 <td>
+                     <button class="operator" value="+">＋</button>
+                 </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button class="select_Num" value="0">0</button>
+                </td>
+                 <td>
+                     <button class="select_Num" value=".">.</button>
+                 </td>
+                 <td>
+                     <button id="calculate">=</button>
+                 </td>
+            </tr>
+           </table>
+        </div>
+        <script src="./calculator.js"></script>
+    </body>
+</html>

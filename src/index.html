@@ -1,9 +1,141 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Webpack 4</title>
+        <title>설문조사</title>
     </head>
     <body>
-        <div id="result"></div>
+        <h3>설문조사</h3>
+        <div>
+        <form>
+            <div class="steps">
+                <ul>
+                    <li>
+                        <input type="text" value="이름" readonly>
+                        <input type="text" class="info" required>
+                    </li>
+                    <li>
+                        <input type="text" value="성별(남/여)" readonly>
+                        <input type="text" class="info" required>
+                    </li>
+                    <li>
+                        <input type="text" value="나이" readonly>
+                        <input type="text" class="info" required>
+                    </li>
+                </ul>
+                     
+            </div>
+            <div class="steps" >
+                <label>무슨 영화를 보고 나오셨나요?</label>
+                <ul>
+                    <li>
+                        <div>
+                            <img src="https://worldbeyondwar.org/wp-content/uploads/2019/12/dark-waters.jpg" alt=""><br>
+                            다크워터스 (Dark Waters)
+                            <input type="radio" name="movie" value="Dark Waters">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="https://w.namu.la/s/b41ffecb88e99467209ea0f46467fad251857b817a05451dab0cfe54a3b7b077f0d3c09ee996cae148cb4f2431b8937e5c33cd1eb6c40c1737457223a2d1c502fa1fd59de9adfaedaf44cfd29293e295964263d2c6991230da17112e04188f46">
+                            <br>1917
+                            <input type="radio"  name="movie" value="1917"> 
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="https://lh3.googleusercontent.com/proxy/lPUUks-mY5rOueldYInBWM-Ehhqm0ZyqjEfCtlAaN6XHh1voVE_vybdE-HHwdvhuwqkXVNJaIXdXp5op7HeGPSZGqvl9d3xWXGREfc4ik_B7rTCjEx7cADADupwOVcY6YslQbaat5wdq2ORvDb6eoUEmuWhM1zY6eGqPzU3YxlFFDtQBeO_H6Tlahx3bVWUE6z5-7H8BTRv2Xf1w5k209HGB6eMLS2BW_rt78_U-8LMgN33wAaHVNaKhp1lqiiy6t33uog1FDp98FQRz0SLr0f5DQiN1yRhB0q7hHghmXFPUeq-hhkelPCkOoYGwdT6Rbr0rHviFg8ygmXfhOiyQZvxIA4UrT1A">
+                            <br>해리포터와 아즈카반의 죄수 <br>(Herry Porter)
+                            <input type="radio"  name="movie" value="Herry Porter">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000083/83097/83097_1000.jpg">
+                            <br>인비저블맨(The Invisible Man)
+                            <input type="radio"  name="movie" value="The Invisible Man">                    
+                        </div>
+                    </li>
+                </ul>
+                 </div>
+            <div class="steps" >
+               <label>관람하신 영화에 대한 평가를 내려주세요</label><br>
+                <input type="text" value="연출" readonly>
+                <select class="rate">
+                    <option value="1">★☆☆☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="5">★★★★★</option>
+                </select><br>
+                <input type="text" value="연기" readonly>
+                <select class="rate">
+                    <option value="1">★☆☆☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="5">★★★★★</option>
+                </select><br>
+                <input type="text" value="스토리" readonly>
+                <select class="rate">
+                    <option value="1">★☆☆☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="5">★★★★★</option>
+                </select><br>
+                <input type="text" value="영상미" readonly>
+                <select class="rate">
+                    <option value="1">★☆☆☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="5">★★★★★</option>
+                </select><br>
+                <input type="text" value="OST" readonly>
+                <select class="rate">
+                    <option value="1">★☆☆☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="5">★★★★★</option>
+                </select>
+            </div>
+            <div class="steps">
+                <input type="text" value="선호장르(3가지 선택가능)" readonly>
+                <ul>
+                    <li>코미디 <input type="checkbox" name="genre"  value="comedy"></li>
+                    <li>액션 <input type="checkbox" name="genre"  value="action"></li>
+                    <li>스릴러 <input type="checkbox" name="genre"  value="thriller"></li>
+                    <li>공포 <input type="checkbox" name="genre"  value="horror"></li>
+                </ul>
+                <ul>
+                    <li>로멘스 <input type="checkbox" name="genre"  value="romance"></li>
+                    <li>범죄 <input type="checkbox" name="genre"  value="crime"></li>
+                    <li>판타지 <input type="checkbox" name="genre"  value="fantasy"></li>
+                    <li>어드벤쳐 <input type="checkbox" name="genre"  value="adventure"></li>
+                </ul>
+                <ul>
+                    <li>만화 <input type="checkbox" name="genre"  value="animation"></li>
+                    <li>스포츠 <input type="checkbox" name="genre"  value="sport"></li>
+                    <li>뮤지컬 <input type="checkbox" name="genre"  value="mosical"></li>
+                    <li>SF <input type="checkbox" name="genre"  value="sci-fi"></li>
+                </ul>
+                <ul>
+                    <li>다큐멘터리 <input type="checkbox" name="genre"  value="documentary"></li>
+                    <li>느와르 <input type="checkbox" name="genre"  value="noir"></li>
+                    <li>서부 <input type="checkbox" name="genre"  value="western"></li>
+                    <li>전쟁 <input type="checkbox" name="genre"  value="war"></li>
+                </ul>
+                                         
+            </div>
+            <div class="steps">
+                <label>감상후기</label>
+                <textarea id="review"></textarea>
+                <button>제출</button>
+            </div>           
+        </form>
+        <div id='footer'><a href="" id="prev">이전페이지</a> <label id="page">1</label>/5<a href="" id="next"> 다음페이지</a></div>
+        
+        </div>
     </body>
 </html>
